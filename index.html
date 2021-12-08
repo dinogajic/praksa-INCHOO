@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header id="header">
-      <a href=""><img id="logo" src="img/logo/logo.svg" alt="" /></a>
-      <ul id="icons">
-        <li>
-          <a href=""><img src="img/icons/search.svg" alt="" /></a>
-        </li>
-        <li>
-          <a href=""><img src="img/icons/shopping-cart.svg" alt="" /></a>
-        </li>
-      </ul>
-      <nav id="nav">
+    <header class="header">
+      <div class="header-container">
+        <a href=""><img class="logo" src="img/logo/logo.svg" alt="" /></a>
+        <ul class="icons">
+          <li>
+            <a href=""><img src="img/icons/search.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="img/icons/shopping-cart.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+      <nav class="nav">
         <a href="#">FREESBES <img src="img/icons/chevron-down.svg" alt="" /></a>
         <a href="#">CLOTHING <img src="img/icons/chevron-down.svg" alt="" /></a>
         <a href="#"
@@ -28,11 +30,33 @@
       </nav>
     </header>
 
-    <div id="slideshow">
-      <img class="slide-img" src="img/logo/image.png" alt="" />
-      <div id="slide1">
-        <p class="slide1-text">THE FLYING DISC STORE</p>
-        <button class="slide1-button">BUY THE DISC</button>
+    <div class="slideshow-container">
+      <div class="slideshow">
+        <img class="slide-img" src="img/logo/image.png" alt="" />
+        <div class="slide">
+          <div class="slide-text">THE FLYING DISC STORE</div>
+          <div class="button">
+            <button class="slide-button">BUY THE DISC</button>
+          </div>
+        </div>
+      </div>
+      <div class="slideshow">
+        <img class="slide-img" src="img/con_img/gear.svg" alt="" />
+        <div class="slide">
+          <div class="slide-text">THE FLYING DISC STORE</div>
+          <div class="button">
+            <button class="slide-button">BUY THE DISC</button>
+          </div>
+        </div>
+      </div>
+      <div class="slideshow">
+        <img class="slide-img" src="img/con_img/gifts.svg" alt="" />
+        <div class="slide">
+          <div class="slide-text">THE FLYING DISC STORE</div>
+          <div class="button">
+            <button class="slide-button">BUY THE DISC</button>
+          </div>
+        </div>
       </div>
       <a class="slide-prev" onclick="plusSlides(-1)"
         ><img src="img/icons/arrow-left.svg" alt=""
@@ -40,35 +64,45 @@
       <a class="slide-next" onclick="plusSlides(1)"
         ><img src="img/icons/arrow-right.svg" alt=""
       /></a>
+      <div class="dot-cont">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
     </div>
-    <div id="homepage-content">
+    <div class="homepage-content">
       <h1>Featured categories</h1>
-      <div id="content-container">
+      <div class="content-container">
         <div class="content">
           <a href="">Frisbees</a>
-          <img src="" alt="" />
+          <img src="img/con_img/frisbees.svg" alt="" />
         </div>
-        <div class="content"><a href="">Gear</a><img src="" alt="" /></div>
         <div class="content">
-          <a href="">Accessories</a><img src="" alt="" />
+          <a href="">Gear</a><img src="img/con_img/gear.svg" alt="" />
         </div>
-        <div class="content"><a href="">Gifts</a><img src="" alt="" /></div>
+        <div class="content">
+          <a href="">Accessories</a
+          ><img src="img/con_img/accessories.svg" alt="" />
+        </div>
+        <div class="content">
+          <a href="">Gifts</a><img src="img/con_img/gifts.svg" alt="" />
+        </div>
       </div>
     </div>
 
-    <footer id="footer">
-      <div id="newsletter">
-        <h3>NEWSLETTER</h3>
+    <footer class="footer">
+      <div class="newsletter">
+        <h2>NEWSLETTER</h2>
         <p>
           Sign up for our newsletter and be the first to find out about new
           products, discounts and more
         </p>
-        <input id="email" type="email" placeholder="Placeholder" />
-        <button id="suscribe" type="submit">SUSCRIBE</button>
+        <input class="email" type="email" placeholder="Placeholder" />
+        <button class="suscribe" type="submit">SUSCRIBE</button>
       </div>
-      <div id="links">
-        <div id="categories">
-          <ul id="ul-categories">
+      <div class="links">
+        <div class="categories">
+          <ul class="ul-categories">
             <li><p>CATEGORIES</p></li>
             <li><a href="#">Frisbee</a></li>
             <li><a href="#">Gear</a></li>
@@ -76,8 +110,8 @@
             <li><a href="#">Gifts</a></li>
           </ul>
         </div>
-        <div id="contact">
-          <ul id="ul-contact">
+        <div class="contact">
+          <ul class="ul-contact">
             <li><p>CONTACT US</p></li>
             <li>
               <a href="#"><img src="img/icons/location.svg" alt="" /></a> Trg
@@ -94,9 +128,10 @@
           </ul>
         </div>
       </div>
-      <div id="copyright">
-        <p id="p-copyright">copyright ® 2021 Grabsbee</p>
+      <div class="copyright">
+        <p class="p-copyright">copyright ® 2021 Grabsbee</p>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
