@@ -277,13 +277,10 @@ hr {
 
 .products {
   display: flex;
-  height: 100%;
-  width: 100%;
   padding-top: 25px;
 }
 
 .sidebar {
-  height: 100%;
   flex: 1 1 25%;
   background-color: rosybrown;
 }
@@ -313,8 +310,6 @@ hr {
 }
 
 .produst-list {
-  height: 100%;
-  width: 100%;
   flex: 1 1 75%;
   background-color: royalblue;
 }
