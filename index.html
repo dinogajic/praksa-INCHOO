@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grabsbee</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <script src="css/swiper-bundle.min.css"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
     <header class="header">
@@ -13,21 +16,94 @@
         <a href=""><img class="logo" src="img/logo/logo.svg" alt="" /></a>
         <ul class="icons">
           <li>
-            <a href=""><img src="img/icons/search.svg" alt="" /></a>
+            <a class="search-inp"><img src="img/icons/search.svg" alt="" /></a>
           </li>
           <li>
-            <a href=""><img src="img/icons/shopping-cart.svg" alt="" /></a>
+            <a class="minicart-inp"
+              ><img src="img/icons/shopping-cart.svg" alt=""
+            /></a>
           </li>
         </ul>
       </div>
+      <div class="search">
+        <div class="search-content">
+          <div class="search-input">
+            <img src="img/icons/search.svg" alt="" />
+            <input
+              class="search-input"
+              type="text"
+              placeholder="Search entire store here..."
+            />
+            <hr class="search-hr" />
+          </div>
+          <div class="search-close">
+            <button class="button-close">Close</button>
+            <img src="img/icons/close.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="minicart">
+        <div class="minicart-nav">
+          <div class="minicart-p">
+            <p>You have no items in your shopping cart</p>
+          </div>
+          <div class="minicart-button">
+            <button class="minicart-close">Close</button>
+            <img src="img/icons/close-black.svg" alt="" />
+          </div>
+        </div>
+      </div>
       <nav class="nav">
-        <a href="#">FREESBES <img src="img/icons/chevron-down.svg" alt="" /></a>
+        <a href="#"
+          >FREESBES
+          <img class="freesbes" src="img/icons/chevron-down.svg" alt=""
+        /></a>
         <a href="#">CLOTHING <img src="img/icons/chevron-down.svg" alt="" /></a>
         <a href="#"
           >ACCESSORIES <img src="img/icons/chevron-down.svg" alt=""
         /></a>
         <a href="#">CONTACT US</a>
       </nav>
+      <div class="nav-drop">
+        <div class="nav-dr-close">
+          <div class="nav-dropdown">
+            <div class="ultimate-frisbee">
+              <ul class="ultimate-frisbee-ul">
+                <li><p>ULTIMATE FRISBEE</p></li>
+                <li><a href="#">Innova Pulsar </a></li>
+                <li><a href="#">XCOM 175G</a></li>
+                <li>
+                  <a href="#">Aviator - Marvel Captain America (Collector) </a>
+                </li>
+              </ul>
+            </div>
+            <div class="recreational">
+              <ul class="recreational-ul">
+                <li><p>RECREATIONAL</p></li>
+                <li><a href="#">Nite Ize Flashflight</a></li>
+                <li><a href="#">Yikun 100g KIDS</a></li>
+              </ul>
+            </div>
+            <div class="contact-us">
+              <ul class="contact-us-ul">
+                <li><p>CONTACT US</p></li>
+                <li>
+                  <a href="#"><img src="img/icons/location.svg" alt="" /></a>
+                  Trg slobode 6
+                </li>
+                <li>
+                  <a href="#"><img src="img/icons/phone.svg" alt="" /></a>
+                  +385958811630
+                </li>
+                <li>
+                  <a href="#"><img src="img/icons/mail.svg" alt="" /></a>
+                  filip.svetlicic@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <div class="slideshow-container">
@@ -41,7 +117,7 @@
         </div>
       </div>
       <div class="slideshow">
-        <img class="slide-img" src="img/con_img/gear.svg" alt="" />
+        <img class="slide-img" src="img/con_img/img-3.jpg" alt="" />
         <div class="slide">
           <div class="slide-text">THE FLYING DISC STORE</div>
           <div class="button">
@@ -50,7 +126,7 @@
         </div>
       </div>
       <div class="slideshow">
-        <img class="slide-img" src="img/con_img/gifts.svg" alt="" />
+        <img class="slide-img" src="img/con_img/img-4.jpg" alt="" />
         <div class="slide">
           <div class="slide-text">THE FLYING DISC STORE</div>
           <div class="button">
@@ -70,22 +146,60 @@
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </div>
+    <!--<div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="slide-img" src="img/logo/image.png" alt="" />
+          <div class="slide">
+            <div class="slide-text">THE FLYING DISC STORE</div>
+            <div class="button">
+              <button class="slide-button">BUY THE DISC</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img class="slide-img" src="img/con_img/gear.svg" alt="" />
+          <div class="slide">
+            <div class="slide-text">THE FLYING DISC STORE</div>
+            <div class="button">
+              <button class="slide-button">BUY THE DISC</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img class="slide-img" src="img/con_img/gifts.svg" alt="" />
+          <div class="slide">
+            <div class="slide-text">THE FLYING DISC STORE</div>
+            <div class="button">
+              <button class="slide-button">BUY THE DISC</button>
+            </div>
+          </div>
+        </div>
+        ...
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <div class="swiper-scrollbar"></div>
+    </div>-->
+
     <div class="homepage-content">
       <h1>Featured categories</h1>
       <div class="content-container">
         <div class="content">
           <a href="">Frisbees</a>
-          <img src="img/con_img/frisbees.svg" alt="" />
+          <img src="img/con_img/img-1.jpg" alt="" />
         </div>
         <div class="content">
-          <a href="">Gear</a><img src="img/con_img/gear.svg" alt="" />
+          <a href="">Gear</a><img src="img/con_img/img-2.jpg" alt="" />
         </div>
         <div class="content">
-          <a href="">Accessories</a
-          ><img src="img/con_img/accessories.svg" alt="" />
+          <a href="">Accessories</a><img src="img/con_img/img-3.jpg" alt="" />
         </div>
         <div class="content">
-          <a href="">Gifts</a><img src="img/con_img/gifts.svg" alt="" />
+          <a href="">Gifts</a><img src="img/con_img/img-4.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -132,6 +246,9 @@
         <p class="p-copyright">copyright ® 2021 Grabsbee</p>
       </div>
     </footer>
+    <script src="js/slider.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>-->
   </body>
 </html>
