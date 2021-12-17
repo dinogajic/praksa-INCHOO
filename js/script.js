@@ -126,3 +126,22 @@ $(".search-inp").on("click", function() {
       "background-color": "#12167a"
     });
   })
+
+
+  $(".button-details").on("click", function() {
+    $(".details-content").css({
+      "display": "block"
+    });
+    $(".more-information").css({
+      "display": "none"
+    });
+  })
+
+  $(".button-moreinf").on("click", function() {
+    $(".details-content").css({
+      "display": "none"
+    });
+    $(".more-information").css({
+      "display": "block"
+    });
+  })

@@ -5,15 +5,15 @@
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 li {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 p {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 /*header*/
@@ -376,6 +376,18 @@ p {
   padding: 20px;
 }
 
+.links p {
+  color: white;
+}
+
+.links a {
+  color: white;
+}
+
+.links li {
+  color: white;
+}
+
 .ul-categories {
   list-style: none;
   padding-right: 250px;
@@ -594,4 +606,165 @@ hr {
 
 .xy {
   flex: 1 1 75%;
+}
+
+/*PRODUCT DETAILS*/
+.product-detail {
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.product-container {
+  padding: 30px;
+  display: flex;
+}
+
+.product-img {
+  height: auto;
+  flex: 1 1 40%;
+  padding-right: 5px;
+}
+
+.product-content {
+  flex: 1 1 60%;
+  padding-left: 5px;
+}
+
+.prod-content {
+}
+
+.img-black {
+  max-width: 100%;
+  height: auto;
+}
+
+.stock {
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+
+.rew-pr {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.rew {
+  padding-top: 12px;
+}
+
+.prod-price {
+  padding-top: 24px;
+  padding-bottom: 12px;
+  font-weight: bold;
+  font-size: 24;
+}
+
+.colors {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.color-black {
+  height: 25px;
+  width: 30px;
+  background-color: black;
+  border: 1px solid black;
+  margin: 2px;
+}
+
+.color-blue {
+  height: 25px;
+  width: 30px;
+  background-color: blue;
+  border: 1px solid black;
+  margin: 2px;
+}
+
+.add {
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.qty {
+  flex: 1 1 20%;
+}
+
+.but {
+  flex: 1 1 80%;
+}
+
+.in-number {
+  height: 40px;
+  width: 50%;
+}
+
+.add-button {
+  color: white;
+  background-color: #12167a;
+  border: none;
+  text-align: center;
+  height: 40px;
+  width: 300px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.product-symbol a {
+  padding: 1px;
+  color: #12167a;
+}
+
+.details a {
+  color: #ec1d2e;
+  padding-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.details-content p {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.details-content {
+  display: block;
+  padding-top: 15px;
+}
+
+.more-information {
+  display: none;
+  padding-top: 15px;
+}
+
+.mi-table {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mi-table td {
+  padding-bottom: 15px;
+}
+
+.bg-cl {
+  background-color: lightgray;
+}
+
+.disc {
+  display: inline-flex;
+  padding-bottom: 30px;
+}
+
+.disc-black {
+  padding-right: 15px;
+}
+
+.disc-orange {
+  padding-right: 15px;
+}
+
+.disc-white {
+  padding-right: 15px;
 }
