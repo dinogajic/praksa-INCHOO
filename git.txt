@@ -1,0 +1,1 @@
+- kod pisanja poruka prilikom commit-anja, napisati smisleni opis sto je napravljeno u tom commit-u

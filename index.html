@@ -16,6 +16,7 @@
         <a href=""><img class="logo" src="img/logo/logo.svg" alt="" /></a>
         <ul class="icons">
           <li>
+<!--              nemoj skracivati naziv css klase - .search-input -->
             <a class="search-inp"><img src="img/icons/search.svg" alt="" /></a>
           </li>
           <li>
@@ -53,6 +54,7 @@
           </div>
         </div>
       </div>
+<!--        .nav > (ul) .navigation > (li) .navigation__item > (a) .navigation__link -->
       <nav class="nav">
         <a href="#"
           >FREESBES
@@ -211,10 +213,13 @@
           Sign up for our newsletter and be the first to find out about new
           products, discounts and more
         </p>
+<!--          ne treba biti css klasa email, bolje generickiji naziv (.input-text)-->
         <input class="email" type="email" placeholder="Placeholder" />
+<!--          paziti na typo - moze biti tesko uociti da nedostaje slovo u HTML-u ili CSS-u i cuditi se zasto ne radi -->
         <button class="suscribe" type="submit">SUSCRIBE</button>
       </div>
       <div class="links">
+<!--          .categories je nepotreban element-->
         <div class="categories">
           <ul class="ul-categories">
             <li><p>CATEGORIES</p></li>
@@ -224,12 +229,20 @@
             <li><a href="#">Gifts</a></li>
           </ul>
         </div>
+  <!--          .contact je nepotreban element-->
         <div class="contact">
+<!--          .footer__columns__title-->
+          <p>CONTACT US</p>
+<!--          .footer__columns__list-->
           <ul class="ul-contact">
-            <li><p>CONTACT US</p></li>
+<!--          .footer__columns__item-->
             <li>
-              <a href="#"><img src="img/icons/location.svg" alt="" /></a> Trg
-              slobode 6
+<!--          .footer__columns__link-->
+              <a href="#">
+<!--          .footer__column__img-->
+                  <img src="img/icons/location.svg" alt="" />
+                  Trg slobode 6
+              </a>
             </li>
             <li>
               <a href="#"><img src="img/icons/phone.svg" alt="" /></a>

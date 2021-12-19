@@ -34,6 +34,7 @@ p {
   list-style: none;
   padding: 40px;
   padding-right: 100px;
+  /*  padding: 40px 100px 40px 40px */
   display: flex;
 }
 
@@ -53,6 +54,7 @@ p {
 .search-content {
   padding-left: 100px;
   padding-right: 100px;
+    /*padding: 0 100px*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,6 +68,7 @@ p {
   color: white;
   flex: 1 1 95%;
   padding: 5px;
+/*    padding: 5px 5px 5px 20px*/
 }
 
 .search-close {
@@ -115,9 +118,11 @@ p {
   flex: 1 1 95%;
   padding: 10px;
   padding-top: 75px;
+/*    padding: 75px 10px 10px 10px */
 }
 
 .minicart-button {
+  /*  ovo ne postoji*/
   display: 1 1 5%;
   display: flex;
   padding: 10px;
@@ -300,12 +305,17 @@ p {
 }
 
 /*homepage content*/
-
+/*bolje napraviti helper klasu pa ju koristiti gdje treba
+.ta--center {
+    text-align: center;
+}
+*/
 .homepage-content h1 {
   text-align: center;
 }
 
 .content-container {
+  /*  ako se negdje ne gazi, ne treba navoditi ako nije potrebno*/
   height: auto;
   display: flex;
 }
@@ -464,6 +474,7 @@ hr {
   align-items: center;
 }
 
+/*typo*/
 .produst-list {
   flex: 1 1 75%;
 }
